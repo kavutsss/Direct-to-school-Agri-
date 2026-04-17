@@ -110,6 +110,17 @@ section {
     margin: 0 auto;
 }
 
+.form-input {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 15px;
+    gap: 15px;
+    background-color: #f0f0f0;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
 /* Specific sections - light background, rounded corners, shadow */
 .about, .projects, .contact-info, .why-section, #course-section, .call-to-action {
     background-color: #f9f9f9;
