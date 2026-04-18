@@ -8,7 +8,7 @@
 </head>
 <body>
     <nav class="navbar">
-        <div class="logo">AgriSchool</div>
+        <div class="logo">AgriSchoolCo</div>
         <ul class="nav-links">
             <li><a href="index.html">Home</a></li>
             <li><a href="project.html">Projects</a></li>
@@ -40,7 +40,28 @@
             </div>
         </div>
     </section>
-
+    <section class="dash-board">
+        <div class="card">
+            <h3>Soil pH-level</h3>
+            <p id="pH-level">--</p>
+         </div>
+        <div class="card">
+            <h3>Crop Recommendation</h3>
+            <p id="crop-suggest">Scanning...</p>
+        </div>
+        <div class="card">
+            <h3>Weather Forecast</h3>
+            <p id="weather">Loading...</p>
+        </div>
+    </section>
+         <script>
+            // Simulate fetching data for the dashboard
+            setTimeout(() => {
+                document.getElementById('pH-level').textContent = '6.5';
+                document.getElementById('crop-suggest').textContent = 'Tomatoes, Peppers';
+                document.getElementById('weather').textContent = 'Sunny, 25°C';
+            }, 2000);
+        </script>
     <footer class="footer">
         <ul class="nav-links">
             <li><a href="index.html">Home</a></li>
@@ -48,7 +69,8 @@
             <li><a href="about.html">About Us</a></li>
             <li><a href="contact.html">Contact</a></li>
         </ul>
-        <p>&copy; 2024 AgriSchool. All rights reserved.</p>
+        <p>&copy; 2026 AgriSchool. All rights reserved.</p>
     </footer>
+    <script src="script.js"></script>
 </body>
 </html>

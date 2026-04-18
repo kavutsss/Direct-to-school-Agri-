@@ -8,7 +8,7 @@
 </head>
 <body>
     <nav class="navbar">
-        <div class="logo">AgriSchool</div>
+        <div class="logo">AgriSchoolCo</div>
         <ul class="nav-links">
             <li><a href="index.html">Home</a></li>
             <li><a href="project.html">Projects</a></li>
@@ -24,27 +24,40 @@
         <p>Offering various course opportunities to choose from with a variety of schools at your disposal</p>
          <p>We are in liase with the government to increase both food production and its accessibility countrywide, and are offering great and suitable courses o our own campus grounds.</p>
     </header>
-    <section class="about">
-        <h2>Our Mission</h2>
-        <p>At AgriSchool, we believe that the future of agriculture lies in the hands of young innovators. Our programme is designed to equip students with the knowledge and skills they need to drive sustainable agricultural practices and contribute to global food security.</p>
-        <h2>Our Approach</h2>
-        <p>We take a holistic approach to agricultural education, combining theoretical knowledge with practical experience  to ensure that our students are well-prepared for the challenges of the agricultural industry. Our curriculum covers a wide range of topics, including sustainable farming practices, agricultural technology, and food systems.</p>
-        <p>We also offer a variety of extracurricular activities, such as field trips, guest lectures, and internships, to provide students with real-world experience and opportunities to connect with industry professionals.</p>
-        <h2>Our Impact</h2>
-        <p>Since our inception, AgriSchool has empowered hundreds of students to become leaders in the agricultural industry. Our graduates have gone on to pursue successful careers in farming, agricultural technology, food systems, and more. We are proud to be a part of their journey and to contribute to the future of agriculture.</p>
-        <p>Join us at AgriSchool and be a part of the movement to create a more sustainable and food-secure future for all.</p>
-    </section>
-    <section class="form-input">
-        <h2>Planning to get invoved?</h2>
-        <form action="submit-form.php" method="post">
-            <label for="name">Name:</label>
-            <input type="text" id="name" name="name" required>
-            <label for="email">Email:</label>
-            <input type="email" id="email" name="email" required>
-            <label for="message">Message:</label>
-            <textarea id="message" name="message" required></textarea>
-            <button type="submit">Submit</button>
-        </form>
+    <section class="about-page-grid">
+        <section class="about">
+            <h2>Our Mission</h2>
+            <p>At AgriSchool, we believe that the future of agriculture lies in the hands of young innovators. Our programme is designed to equip students with the knowledge and skills they need to drive sustainable agricultural practices and contribute to global food security.</p>
+            <h2>Our Approach</h2>
+            <p>We take a holistic approach to agricultural education, combining theoretical knowledge with practical experience  to ensure that our students are well-prepared for the challenges of the agricultural industry. Our curriculum covers a wide range of topics, including sustainable farming practices, agricultural technology, and food systems.</p>
+            <p>We also offer a variety of extracurricular activities, such as field trips, guest lectures, and internships, to provide students with real-world experience and opportunities to connect with industry professionals.</p>
+            <h2>Our Impact</h2>
+            <p>Since our inception, AgriSchool has empowered hundreds of students to become leaders in the agricultural industry. Our graduates have gone on to pursue successful careers in farming, agricultural technology, food systems, and more. We are proud to be a part of their journey and to contribute to the future of agriculture.</p>
+            <p>Join us at AgriSchool and be a part of the movement to create a more sustainable and food-secure future for all.</p>
+        </section>
+        <section class="form-input">
+            <h2>Wanna get involved?</h2>
+            <form action="submit-form.php" method="post">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+                <label for="password">Password:</label>
+                <input type="password" id="password" name="password" required>
+                <label for="confirm-password">Confirm Password:</label>
+                <input type="password" id="confirm-password" name="confirm-password" required>
+                <label for="course">Select Course:</label>
+                <select id="course" name="course" required>
+                    <option value="">--Please choose an option--</option>
+                    <option value="sustainable-farming">Sustainable Farming</option>
+                    <option value="agricultural-technology">Agricultural Technology</option>
+                    <option value="food-systems">Food Systems</option>
+                </select>
+                <label for="message">Why do you want to join us?</label>
+                <textarea id="message" name="message" rows="4" required></textarea>
+                <button type="submit">Submit</button>
+            </form>
+        </section>
     </section>
     <footer class="footer">
         <ul class="nav-links">
@@ -53,7 +66,7 @@
             <li><a href="about.html">About Us</a></li>
             <li><a href="contact.html">Contact</a></li>
         </ul>
-        <p>&copy; 2024 AgriSchool. All rights reserved.</p>
+        <p>&copy; 2026 AgriSchool. All rights reserved.</p>
     </footer>
 </body>
 </html>
