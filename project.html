@@ -42,26 +42,19 @@
     </section>
     <section class="dash-board">
         <div class="card">
-            <h3>Soil pH-level</h3>
-            <p id="pH-level">--</p>
-         </div>
-        <div class="card">
             <h3>Crop Recommendation</h3>
             <p id="crop-suggest">Scanning...</p>
+        </div>
+        <div class="card">
+            <h3>Temperature</h3>
+            <p id="temperature">--</p>
         </div>
         <div class="card">
             <h3>Weather Forecast</h3>
             <p id="weather">Loading...</p>
         </div>
     </section>
-         <script>
-            // Simulate fetching data for the dashboard
-            setTimeout(() => {
-                document.getElementById('pH-level').textContent = '6.5';
-                document.getElementById('crop-suggest').textContent = 'Tomatoes, Peppers';
-                document.getElementById('weather').textContent = 'Sunny, 25°C';
-            }, 2000);
-        </script>
+         
     <footer class="footer">
         <ul class="nav-links">
             <li><a href="index.html">Home</a></li>
@@ -71,6 +64,6 @@
         </ul>
         <p>&copy; 2026 AgriSchool. All rights reserved.</p>
     </footer>
-    <script src="script.js"></script>
+    <script type="module" src="js/main.js"></script>
 </body>
 </html>
