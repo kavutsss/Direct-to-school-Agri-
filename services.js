@@ -1,4 +1,5 @@
-const response = await fetch("https://farmsuite.ujuzikilimo.com/api/v1/auth/generate-token", {
+export async function getAuthToken() {
+const response = await fetch("", {
   method: "POST",
   headers: {
     "Content-Type": "application/json",
@@ -10,5 +11,7 @@ const response = await fetch("https://farmsuite.ujuzikilimo.com/api/v1/auth/gene
 });
 
 const data = await response.json();
-const token = data.token;
+return data.token;
+}
+
 
