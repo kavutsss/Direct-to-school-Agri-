@@ -1,19 +1,30 @@
-import { getAuthToken } from "./services.js";
+import {getWeatherData} from './services.js';
+import {isInputValid} from './validation.js';
 
-async function updateDashboard() {
-  const token = await getAuthToken();
-  // ... rest of the function
- 
-  const dataResponse =await fetch("https://farmsuite.ujuzikilimo.com/api/v1/dashboard/data", {
-    headers: {
-      "Authorization": `Bearer ${token}`, 
-    }
-});
+const searchBtn = document.getElementById('search-btn');
+const cityInput = document.getElementById('city-input');
+const displayarea = document.getElementById('weather-Results');
 
-const data = await dataResponse.json();
-document.getElementById('pH-level').textContent = data.soil_ph;
-document.getElementById('crop-suggest').textContent = data.crop_suggestions.join(', ');
-document.getElementById('weather').textContent = `${data.weather.description}, ${data.weather.temperature}°C`;
+function fetchWeatherData(city) {
+  console.log('Fetching weather data for:', city);
+  // Simulate fetching weather data
+  return{
+    temperature:"---",
+    desc: "API not connected yet",
+    cityName: "city"
+  };
 }
 
-updateDashboard();
+searchBtn.addEventListener('click', () => {
+  const userInput = cityInput.value;
+if (validateCityInput(userInput)) {
+  const data = fetchWeatherData(userInput);
+  displayarea.innerHTML = `
+    <h2>${data.cityName}</h2>
+    <p>Temperature: ${data.temperature}</p>
+    <p>Description: ${data.desc}</p>
+  `;
+}
+});
+import {getWeatherData} from './services.js';
+import {isInputValid} from './validation.js';
