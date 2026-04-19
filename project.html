@@ -20,8 +20,9 @@
         <h1>Our Projects</h1>
         <p>Discover the innovative projects we're working on to empower the next generation of agricultural innovators.</p>
     </header>
-    <section class="projects">
-        <h2>Current Projects</h2>
+    <section class="project-page-grid">
+        <section class="projects">
+            <h2>Current Projects</h2>
         <div class="project-list">
             <div class="project-item">
                 <h3>Urban Farming Initiative</h3>
@@ -40,21 +41,18 @@
             </div>
         </div>
     </section>
-    <section class="dash-board">
-        <div class="card">
-            <h3>Crop Recommendation</h3>
-            <p id="crop-suggest">Scanning...</p>
-        </div>
-        <div class="card">
-            <h3>Temperature</h3>
-            <p id="temperature">--</p>
-        </div>
-        <div class="card">
-            <h3>Weather Forecast</h3>
-            <p id="weather">Loading...</p>
-        </div>
+    <section class="form-input">
+        <h2>Field data</h2>
+        <form id="agriForm">
+            <div class="form-group">
+                <label for="location">Location:</label>
+                <input type="text" id="location" name="location" required>
+            </div>
+            <button type="submit">Submit</button>
+        </form>
+        <div id="weather-results"></div>
     </section>
-         
+    </section>
     <footer class="footer">
         <ul class="nav-links">
             <li><a href="index.html">Home</a></li>
@@ -64,7 +62,6 @@
         </ul>
         <p>&copy; 2026 AgriSchool. All rights reserved.</p>
     </footer>
-    <script src ="main.js"></script>
-    <script src ="validation..js"></script>
+    <script type="module" src="main.js"></script>
 </body>
 </html>
