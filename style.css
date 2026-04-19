@@ -153,6 +153,34 @@ section {
     gap: 16px;
 }
 
+.project-page-grid {
+    display: flex;
+    gap: 30px;
+    align-items: flex-start;
+    justify-content: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 40px 20px;
+    flex-wrap: wrap;
+}
+
+.project-page-grid .projects {
+    flex: 2;
+    min-width: 320px;
+}
+
+.project-page-grid .form-input {
+    flex: 1;
+    min-width: 320px;
+    margin-bottom: 0;
+}
+
+@media (max-width: 900px) {
+    .project-page-grid {
+        flex-direction: column;
+    }
+}
+
 .about-page-grid .form-input label {
     font-weight: 600;
     color: #2d6a4f;
@@ -194,6 +222,86 @@ section {
     background-color: #4e342e;
     transform: translateY(-2px);
     box-shadow: 0 10px 18px rgba(0,0,0,0.18);
+}
+
+.form-input form {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.form-input label {
+    font-weight: 600;
+    color: #2d6a4f;
+}
+
+.form-input input,
+.form-input select,
+.form-input textarea {
+    width: 100%;
+    padding: 12px 14px;
+    border: 1px solid #c5c5c5;
+    border-radius: 8px;
+    background-color: #ffffff;
+    font-size: 1rem;
+    outline: none;
+    transition: border-color 0.2s ease, box-shadow 0.2s ease;
+}
+
+.form-input input:focus,
+.form-input select:focus,
+.form-input textarea:focus {
+    border-color: #2d6a4f;
+    box-shadow: 0 0 0 3px rgba(45, 106, 79, 0.12);
+}
+
+.form-input button {
+    width: fit-content;
+    background-color: #2d6a4f;
+    color: #f0f0f0;
+    border: none;
+    padding: 12px 24px;
+    border-radius: 8px;
+    cursor: pointer;
+    box-shadow: 0 6px 14px rgba(0,0,0,0.12);
+    transition: background-color 0.3s ease, transform 0.2s ease, box-shadow 0.3s ease;
+}
+
+.form-input button:hover {
+    background-color: #4e342e;
+    transform: translateY(-2px);
+    box-shadow: 0 10px 18px rgba(0,0,0,0.18);
+}
+
+/* Weather results styling - positioned directly below the form */
+#weather-results {
+    margin-top: 20px;
+    padding: 20px;
+    background-color: #ffffff;
+    border-radius: 8px;
+    border: 1px solid #e0e0e0;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+
+#weather-results #city-name {
+    color: #2d6a4f;
+    font-size: 1.4em;
+    font-weight: bold;
+    margin: 0 0 15px 0;
+}
+
+#weather-results #temperature {
+    color: #333;
+    font-size: 1.2em;
+    margin: 8px 0;
+    font-weight: 600;
+}
+
+#weather-results #weather {
+    color: #666;
+    font-size: 1.1em;
+    margin: 8px 0;
+    font-style: italic;
 }
 
 /* Specific sections - light background, rounded corners, shadow */

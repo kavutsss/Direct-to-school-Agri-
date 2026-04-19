@@ -1,4 +1,4 @@
-function validateCityInput(input) {
+function isInputValid(input) {
     const trimmedInput = input.trim();
     if (trimmedInput === "") {
         alert ("City name cannot be empty. Please enter a valid city name.");
