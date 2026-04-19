@@ -5,9 +5,9 @@ html, body {
     margin: 0;
     padding: 0;
     background-color: #e5e5e5;
-    font-family: 'My custom font', Arial, sans-serif;
     line-height: 1.6;
     color: #333;
+    font-family: Georgia, 'Times New Roman', Times, serif;
 }
 
 /* Navigation bar - green background, sticks to top when scrolling */
@@ -61,12 +61,14 @@ header.hero {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    font-family: sans-serif;
 }
 
 /* Main heading in hero - very big */
 header.hero h1 {
     font-size: 3em;
     margin-bottom: 20px;
+    font-family: sans-serif;
 }
 
 /* Paragraph in hero - medium size */
@@ -125,6 +127,7 @@ section {
     color: #2d6a4f;
     margin-bottom: 20px;
     align-self: center;
+    font-family: cursive;
 }
 
 .about-page-grid {
@@ -311,6 +314,7 @@ section {
     margin: 20px 0;
     padding: 30px;
     box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 
 /* Headings in sections - green color */
