@@ -1,0 +1,13 @@
+{
+  "name": "agrischool-co",
+  "version": "1.0.0",
+  "description": "Unit tests for AgriSchool website",
+  "type": "module",
+  "scripts": {
+    "test": "node --test simple-test.js",
+    "test:watch": "node --test --watch simple-test.js"
+  },
+  "devDependencies": {
+    "@types/node": "^20.0.0"
+  }
+}
