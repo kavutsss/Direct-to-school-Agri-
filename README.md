@@ -23,4 +23,5 @@ Our platform provides information on various projects we have completed, not for
  * **JavaScript-Using logic and API integration**
  * **GitHub Actions-Containing automated CI/CD deployment**
  * **API_key: https://api.open-meteo.com/v1/forecast?latitude=${latitude}&longitude=${longitude}&current_weather=true&temperature_unit=celsius**
-            * ** https://geocoding-api.open-meteo.com/v1/search?name=${encodeURIComponent(city)}&count=1&language=en&format=json**
+   ---
+ * **         https://geocoding-api.open-meteo.com/v1/search?name=${encodeURIComponent(city)}&count=1&language=en&format=json**
