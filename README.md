@@ -27,7 +27,10 @@ Our platform provides information on various projects we have completed, not for
    3.Navigate to project folder
    ```bash
   cd project-name
-
+-
+  4.Install depeendancies
+  ```bash
+  npm install
 -
     ## TECH-STACK
  * **HTML5-Providing structural layout**
