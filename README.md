@@ -13,10 +13,11 @@ Our platform provides information on various projects we have completed, not for
  * **Links to our social media platforms**
  * 
  ## GETTING STARTED
- Tools neede:
+ Tools needed:
  * **vscode**
  * **gitHub**
-   *Installation*
+-
+ * **Installation**
    1. Fork the repository
    
    2.Clone the repository
@@ -28,7 +29,7 @@ Our platform provides information on various projects we have completed, not for
    ```bash
   cd project-name
 -
-  4.Install depeendancies
+  4.Install dependancies
   ```bash
   npm install
 -
