@@ -17,7 +17,7 @@ Our platform provides information on various projects we have completed, not for
  * **vscode**
  * **gitHub**
 -
- * **Installation**
+ *Installation*
    1. Fork the repository
    
    2.Clone the repository
